@@ -1,5 +1,5 @@
 // Адреса «бекенду» — туди сайт шле запити за товарами та улюбленими (як телефонний номер сервера).
-const API = 'https://stereo-mashed-rectified.ngrok-free.dev';
+const API = 'https://velocore-ckfd.onrender.com';
 
 // Список усіх велосипедів, які прийшли з сервера (порожній на старті, потім заповнюється).
 let products = [];
