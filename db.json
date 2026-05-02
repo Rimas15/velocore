@@ -1,0 +1,334 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Canyon Aeroad CFR",
+      "category": "road",
+      "price": 4299,
+      "brand": "Canyon",
+      "image": "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=600&q=80",
+      "badge": "Новинка",
+      "rating": 4.9,
+      "reviews": 84,
+      "description": "Аеродинамічний карбоновий шосейний велосипед для максимальної швидкості. Shimano Dura-Ace Di2, карбонові колеса.",
+      "specs": {
+        "frame": "Carbon CFR",
+        "groupset": "Shimano Dura-Ace Di2",
+        "weight": "6.8 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "9",
+      "name": "Trek Émonda SL 6",
+      "category": "road",
+      "price": 2799,
+      "brand": "Trek",
+      "image": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600&q=80",
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 127,
+      "description": "Легкий шосейний велосипед з карбоновою рамою. Shimano Ultegra Di2, відмінний для підйомів.",
+      "specs": {
+        "frame": "OCLV Carbon",
+        "groupset": "Shimano Ultegra Di2",
+        "weight": "7.5 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "10",
+      "name": "Giant Propel Advanced 2",
+      "category": "road",
+      "price": 3499,
+      "brand": "Giant",
+      "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=600&q=80",
+      "badge": null,
+      "rating": 4.7,
+      "reviews": 98,
+      "description": "Аеродинамічний шосейник з карбоновою рамою Advanced-Grade. SRAM Force AXS, дискові гальма.",
+      "specs": {
+        "frame": "Advanced-Grade Composite",
+        "groupset": "SRAM Force AXS",
+        "weight": "7.9 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Trek Marlin 7",
+      "category": "mountain",
+      "price": 899,
+      "brand": "Trek",
+      "image": "https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=600&q=80",
+      "badge": null,
+      "rating": 4.7,
+      "reviews": 213,
+      "description": "Надійний гірський велосипед для трейлів і пересіченої місцевості. Гідравлічні гальма, пружинна вилка.",
+      "specs": {
+        "frame": "Alpha Silver Aluminum",
+        "groupset": "Shimano Deore",
+        "weight": "14.3 kg",
+        "wheel": "29\""
+      }
+    },
+    {
+      "id": "4",
+      "name": "Giant Trance X 29",
+      "category": "mountain",
+      "price": 3299,
+      "brand": "Giant",
+      "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=600&q=80",
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 92,
+      "description": "Повнопідвісний трейловий велосипед з хід підвіски 130 мм. Для складних гірських маршрутів.",
+      "specs": {
+        "frame": "ALUXX SL Aluminum",
+        "groupset": "SRAM GX Eagle",
+        "weight": "13.9 kg",
+        "wheel": "29\""
+      }
+    },
+    {
+      "id": "11",
+      "name": "Specialized Stumpjumper EVO",
+      "category": "mountain",
+      "price": 4199,
+      "brand": "Specialized",
+      "image": "https://images.unsplash.com/photo-1547447134-cd3f5c716030?w=600&q=80",
+      "badge": "Топ вибір",
+      "rating": 4.9,
+      "reviews": 74,
+      "description": "Ендуро-велосипед з карбоновою рамою та підвіскою 150 мм. SRAM X01 Eagle, Fox Factory.",
+      "specs": {
+        "frame": "S-Works Carbon",
+        "groupset": "SRAM X01 Eagle",
+        "weight": "13.2 kg",
+        "wheel": "29\"/27.5\""
+      }
+    },
+    {
+      "id": "3",
+      "name": "Specialized Sirrus X",
+      "category": "city",
+      "price": 1199,
+      "brand": "Specialized",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "badge": "Топ продаж",
+      "rating": 4.8,
+      "reviews": 156,
+      "description": "Універсальний міський велосипед з агресивною геометрією. Ідеальний для щоденних поїздок.",
+      "specs": {
+        "frame": "Aluminum",
+        "groupset": "Shimano Deore",
+        "weight": "12.1 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "12",
+      "name": "Trek FX 3 Disc",
+      "category": "city",
+      "price": 849,
+      "brand": "Trek",
+      "image": "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=600&q=80",
+      "badge": null,
+      "rating": 4.6,
+      "reviews": 201,
+      "description": "Швидкий міський велосипед із дисковими гальмами та алюмінієвою рамою. Комфортний для щоденних поїздок.",
+      "specs": {
+        "frame": "Alpha Platinum Aluminum",
+        "groupset": "Shimano Acera",
+        "weight": "10.8 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "13",
+      "name": "Giant Escape 3",
+      "category": "city",
+      "price": 599,
+      "brand": "Giant",
+      "image": "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=600&q=80",
+      "badge": null,
+      "rating": 4.5,
+      "reviews": 312,
+      "description": "Доступний міський велосипед для початківців. Легка алюмінієва рама, надійна трансмісія Shimano.",
+      "specs": {
+        "frame": "ALUXX Aluminum",
+        "groupset": "Shimano Tourney",
+        "weight": "11.5 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Cowboy 4 ST",
+      "category": "electric",
+      "price": 2490,
+      "brand": "Cowboy",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "badge": "Електро",
+      "rating": 4.9,
+      "reviews": 61,
+      "description": "Стильний електровелосипед з розумною асистою. Автоматична трансмісія, інтегрований акумулятор.",
+      "specs": {
+        "frame": "Hydroformed Aluminum",
+        "groupset": "Automatic",
+        "weight": "18.9 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "14",
+      "name": "Trek Allant+ 7",
+      "category": "electric",
+      "price": 3299,
+      "brand": "Trek",
+      "image": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600&q=80",
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 88,
+      "description": "Потужний електровелосипед для міста та передмістя. Bosch Performance Line, запас ходу до 130 км.",
+      "specs": {
+        "frame": "Alpha Platinum Aluminum",
+        "groupset": "Shimano Deore",
+        "weight": "24.5 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "15",
+      "name": "Giant Explore E+ 2",
+      "category": "electric",
+      "price": 2799,
+      "brand": "Giant",
+      "image": "https://images.unsplash.com/photo-1526401485004-46910ecc8e51?w=600&q=80",
+      "badge": "Новинка",
+      "rating": 4.7,
+      "reviews": 53,
+      "description": "Універсальний електровелосипед з мотором SyncDrive Sport. Підходить для міста та бездоріжжя.",
+      "specs": {
+        "frame": "ALUXX SL Aluminum",
+        "groupset": "Shimano Deore 10sp",
+        "weight": "22.1 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Cannondale Topstone",
+      "category": "gravel",
+      "price": 1799,
+      "brand": "Cannondale",
+      "image": "https://images.unsplash.com/photo-1526401485004-46910ecc8e51?w=600&q=80",
+      "badge": null,
+      "rating": 4.7,
+      "reviews": 118,
+      "description": "Гравельний велосипед для пригод. Широкі шини, комфортна геометрія, SRAM Apex AXS.",
+      "specs": {
+        "frame": "SmartForm C2 Alloy",
+        "groupset": "SRAM Apex AXS",
+        "weight": "10.4 kg",
+        "wheel": "700c/650b"
+      }
+    },
+    {
+      "id": "16",
+      "name": "Trek Checkpoint SL 5",
+      "category": "gravel",
+      "price": 2499,
+      "brand": "Trek",
+      "image": "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=600&q=80",
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 95,
+      "description": "Карбоновий гравельний велосипед для дальніх пригод. Shimano GRX 810, IsoSpeed демпфування.",
+      "specs": {
+        "frame": "500 Series OCLV Carbon",
+        "groupset": "Shimano GRX 810",
+        "weight": "9.2 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "17",
+      "name": "Specialized Diverge Sport",
+      "category": "gravel",
+      "price": 2199,
+      "brand": "Specialized",
+      "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=600&q=80",
+      "badge": "Акція",
+      "rating": 4.7,
+      "reviews": 76,
+      "description": "Гравельний велосипед з технологією Future Shock 3.0. SRAM Rival AXS, широкі можливості налаштування.",
+      "specs": {
+        "frame": "E5 Premium Aluminum",
+        "groupset": "SRAM Rival AXS",
+        "weight": "10.1 kg",
+        "wheel": "700c"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Giro Montaro MIPS",
+      "category": "accessories",
+      "price": 149,
+      "brand": "Giro",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "badge": null,
+      "rating": 4.6,
+      "reviews": 340,
+      "description": "MTB шолом з системою захисту MIPS. 18 вентиляційних отворів, регульована посадка.",
+      "specs": {
+        "protection": "MIPS",
+        "vents": "18",
+        "weight": "320 g",
+        "sizes": "S/M/L"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Shimano RC702 SPD-SL",
+      "category": "accessories",
+      "price": 219,
+      "brand": "Shimano",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "badge": "Акція",
+      "rating": 4.8,
+      "reviews": 189,
+      "description": "Шосейні велотуфлі з карбоновою підошвою. Легкі та жорсткі для максимальної передачі потужності.",
+      "specs": {
+        "sole": "Carbon",
+        "closure": "BOA L6",
+        "weight": "248 g",
+        "cleat": "SPD-SL"
+      }
+    },
+    {
+      "id": "18",
+      "name": "Garmin Edge 540",
+      "category": "accessories",
+      "price": 349,
+      "brand": "Garmin",
+      "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&q=80",
+      "badge": "Новинка",
+      "rating": 4.9,
+      "reviews": 142,
+      "description": "GPS-комп'ютер для велосипеда з картами та навігацією. Тривалість роботи до 26 годин, ClimbPro.",
+      "specs": {
+        "display": "2.6\" кольоровий",
+        "battery": "26 год",
+        "weight": "82 g",
+        "connectivity": "ANT+/BLE"
+      }
+    }
+  ],
+  "favorites": [
+    {
+      "id": "0227",
+      "productId": 14
+    }
+  ]
+}

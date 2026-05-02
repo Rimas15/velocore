@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- Це головна сторінка сайту: тут видно структуру «шапки», каталогу, підвалу. Тексти й кнопки; логіка в окремому файлі app.js. -->
+<html lang="uk">
+<head>
+  <!-- Кодування літер (українська та інші мови відображаються правильно). -->
+  <meta charset="UTF-8">
+  <!-- Щоб сторінка нормально виглядала на телефоні (масштаб по ширині екрана). -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Текст на вкладці браузера над сторінкою. -->
+  <title>VeloCore — Магазин велосипедів</title>
+  <!-- Підключення шрифтів з інтернету (як підвантажити красиві літери). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Файл стилів — кольори, відступи, розміри (окремо від тексту сторінки). -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Верхня смуга: логотип, меню, пошук, кнопка улюблених. id="header" — якір для стилів; пошук і улюблені читає програма в app.js. -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="6" cy="16" r="4"/><circle cx="18" cy="16" r="4"/>
+            <path d="M6 16L10 8h4l2 4M10 8l2 4h4"/>
+          </svg>
+          <span>VeloCore</span>
+        </a>
+
+        <nav class="nav">
+          <a href="#catalog" class="nav-link">Каталог</a>
+          <a href="#features" class="nav-link">Переваги</a>
+          <a href="#newsletter" class="nav-link">Контакти</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="search-wrap">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <!-- Поле пошуку: у app.js шукають саме id="search-input". -->
+            <input type="search" id="search-input" class="search-input" placeholder="Пошук...">
+          </div>
+          <!-- Кнопка «Улюблені»: id="btn-fav" — програма відкриває бічну панель. Цифра в id="fav-badge" оновлюється з app.js. -->
+          <button class="btn-fav" id="btn-fav">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            Улюблені
+            <span class="fav-badge" id="fav-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Великий банер на початку: заклик і кнопка в каталог (посилання вниз на ту ж сторінку). -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-label">Колекція 2025</div>
+          <h1 class="hero-title">RIDE<br>YOUR<br><em>FREEDOM</em></h1>
+          <p class="hero-desc">Преміум велосипеди, аксесуари та екіпіровка від провідних брендів. Від асфальту до гірських вершин.</p>
+          <a href="#catalog" class="btn-primary">Переглянути каталог</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-val">200+</span><span class="stat-lbl">Моделей</span></div>
+          <div class="stat"><span class="stat-val">15+</span><span class="stat-lbl">Брендів</span></div>
+          <div class="stat"><span class="stat-val">4.9</span><span class="stat-lbl">Рейтинг</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Каталог товарів. id="catalog" — куди ведуть посилання з меню. -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      <div class="catalog-header">
+        <h2 class="section-title">Каталог</h2>
+        <!-- Кнопки категорій: id="filters" і data-cat на кнопках — їх обробляє app.js (фільтр списку). -->
+        <div class="filters" id="filters">
+          <button class="filter-btn active" data-cat="all">Всі</button>
+          <button class="filter-btn" data-cat="road">Шосейні</button>
+          <button class="filter-btn" data-cat="mountain">Гірські</button>
+          <button class="filter-btn" data-cat="city">Міські</button>
+          <button class="filter-btn" data-cat="electric">Електро</button>
+          <button class="filter-btn" data-cat="gravel">Гравел</button>
+          <button class="filter-btn" data-cat="accessories">Аксесуари</button>
+        </div>
+      </div>
+      <!-- Сітка карток: спочатку порожньо; app.js вставляє сюди товари з сервера (id="products-grid"). -->
+      <div class="products-grid" id="products-grid"></div>
+      <!-- Повідомлення, коли після фільтра/пошуку нічого не лишилось (показ і ховання з app.js). -->
+      <div class="empty-state" id="empty-state" style="display:none">
+        <div class="empty-icon">🔍</div>
+        <p>Нічого не знайдено</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок «чому ми» — статичний текст, без зв’язку з app.js. -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <h2 class="section-title">Чому VeloCore</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-num">01</div>
+          <div class="feature-body">
+            <div class="feature-title">Швидка доставка</div>
+            <p>По всій Україні від 1 до 3 робочих днів. Безкоштовно від $500.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">02</div>
+          <div class="feature-body">
+            <div class="feature-title">Гарантія якості</div>
+            <p>Кожен велосипед проходить перевірку. Офіційна гарантія до 5 років.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">03</div>
+          <div class="feature-body">
+            <div class="feature-title">Безкоштовне ТО</div>
+            <p>Перший технічний огляд безкоштовно. Налаштування під вас.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма підписки: id="newsletter-form" і id="nl-email" — app.js показує подяку (на сервер не відправляє). -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <h2 class="newsletter-title">БУДЬ В КУРСІ <em>НОВИНОК</em></h2>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" id="nl-email" class="nl-input" placeholder="ваш@email.com" required>
+          <button type="submit" class="btn-primary">Підписатись</button>
+        </form>
+        <p class="nl-note">Без спаму. Відписатись будь-коли.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Підвал сайту: посилання й копірайт (для людей; програма їх не чіпає). -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="6" cy="16" r="4"/><circle cx="18" cy="16" r="4"/>
+              <path d="M6 16L10 8h4l2 4M10 8l2 4h4"/>
+            </svg>
+            <span>VeloCore</span>
+          </a>
+          <p>Преміум велосипеди з 2018 року.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Каталог</div>
+          <a href="#catalog">Шосейні</a>
+          <a href="#catalog">Гірські</a>
+          <a href="#catalog">Електро</a>
+          <a href="#catalog">Гравел</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Компанія</div>
+          <a href="#">Про нас</a>
+          <a href="#">Блог</a>
+          <a href="#">Партнерство</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Підтримка</div>
+          <a href="#">Доставка</a>
+          <a href="#">Повернення</a>
+          <a href="#">Контакти</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 VeloCore. Всі права захищено.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Вікно поверх сторінки з деталями одного товару. Затемнення: id="modal-overlay"; хрестик: id="modal-close"; вміст підставляє app.js в id="modal-content". -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Бічна панель «Улюблені»: список id="fav-list" заповнює app.js; закрити — id="fav-panel-close". -->
+  <aside class="fav-panel" id="fav-panel">
+    <div class="fav-panel-header">
+      <span class="fav-panel-title">Улюблені</span>
+      <button class="fav-panel-close" id="fav-panel-close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="fav-list" id="fav-list"></div>
+  </aside>
+  <!-- Темний шар позаду панелі: клік по ньому закриває улюблені (так налаштовано в app.js, id="fav-overlay"). -->
+  <div class="fav-overlay" id="fav-overlay"></div>
+
+  <!-- Коротке повідомлення знизу (текст підставляє app.js, id="toast"). -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Скрипт логіки магазину: завантаження товарів, улюблені, пошук, модалка — файл app.js. -->
+  <script src="app.js"></script>
+</body>
+</html>
