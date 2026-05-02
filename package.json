@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npm-run-all --parallel dev:app dev:server",
     "dev:app": "live-server public --port=3000 --no-browser",
-    "dev:server": "json-server --watch db.json --port=3001"
+    "dev:server": "json-server --watch db.json --port=3001",
+    "start": "json-server --watch db.json --port $PORT"
   },
   "keywords": [],
   "author": "",
